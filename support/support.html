@@ -1,26 +1,201 @@
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap Exercise 1</title>
-    
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <style>
-        
-    </style>
-</head>
 
-<body>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <style></style>
+  </head>
+
+  <body>
     <!-- INSERT CODE HERE -->
-    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#jumbotron"
+                >Jumbotron</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carousel">Carousel</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#cards"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cards
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#burgers">Burgers</a></li>
+                <li><a class="dropdown-item" href="#fries">Fries</a></li>
+
+                <li>
+                  <a class="dropdown-item" href="#drinks">Drinks</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Add the Jumbotron -->
+
+    <!-- Add the carousel -->
+
+    <!-- Add the cards -->
+    <h2 class="text-center">
+      Who to reach out to if you are a victim of DeepFake?
+    </h2>
+    <div class="container" id="cards">
+      <div class="row">
+        <div class="col-xxl-4" id="burgers">
+          <div class="card">
+            <img src="./images/SPF.jpg" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title">Singapore Police Force</h5>
+              <p class="card-text">
+                The Singapore Police Force (SPF) is a uniformed organisation
+                under the purview of the Ministry of Home Affairs. The mission
+                of the SPF is to prevent, deter and detect crime to ensure the
+                safety and security of Singapore. The SPF has noted the
+                insurgence of impersonation crimes like Deepfake in the recent
+                years. If you have information related to such cases, please
+                call the Police Hotline at 1800-255-0000, or submit it online at
+                www.police.gov.sg/iwitness. Please dial ‘999’ if you require
+                urgent Police assistance.
+              </p>
+              <a
+                href="https://www.police.gov.sg/Contact-Us"
+                class="btn btn-primary"
+                >Report Deepfake</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4" id="fries">
+          <div class="card">
+            <img
+              src="./images/Touch_cyber.jpeg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">TOUCH Cyber Wellness</h5>
+              <p class="card-text">
+                TOUCH Cyber Wellness (TCW) is a leading non-profit agency that
+                advocates cyber wellness. We provide counselling for children,
+                youth, adults, couples & families on various issues including
+                cyber wellness, excessive device use, addiction, delinquency,
+                marital, parenting, emotional & interpersonal issues.
+              </p>
+              <a href="https://www.onlinesos.org/" class="btn btn-primary"
+                >Reach out</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-xxl-4" id="drinks">
+          <div class="card">
+            <img
+              src="./images/chat-with-belle.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Belle, Beyond the Label helpbot</h5>
+              <p class="card-text">
+                If you or someone you know is experiencing cyberbullying, Belle,
+                the Beyond the Label helpbot, can provide assistance. Belle is
+                an interactive platform that offers mental health resources and
+                services in a private and convenient manner.
+              </p>
+              <a
+                href="https://www.ncss.gov.sg/our-initiatives/beyond-the-label/belle-beyond-the-label-helpbot#"
+                class="btn btn-primary"
+                >Talk to Belle</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add the Modal -->
+    <div class="modal" tabindex="-1" id="exampleModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
