@@ -3,7 +3,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap Exercise 1</title>
+    <title>Stop Deepfakes</title>
 
     <!-- CSS only -->
     <link
@@ -28,8 +28,24 @@
         opacity: 70%;
       }
       .card {
-        background-color: white;
+        background-color: transparent;
         margin: 2rem;
+        text-align: center;
+        opacity: 80%;
+        color: rgb(113, 172, 194);
+        font-style: oblique;
+      }
+      .masquerading {
+        background: url("images/masquerading.jpg") no-repeat center center;
+        background-size: cover;
+        height: 800px;
+        display: flex;
+        align-items: center;
+        margin-top: 10em;
+        text-align: center;
+      }
+      .facts{
+        
       }
     </style>
   </head>
@@ -38,7 +54,12 @@
     <!-- INSERT CODE HERE -->
     <nav class="navbar navbar-expand-lg bg-light mb-2">
       <div class="container-fluid">
-        <img src="./images/logo.png" style="position: relative; width: 100px" />
+        <a href="home.html">
+          <img
+            src="./images/logo.png"
+            style="position: relative; width: 100px"
+          />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -93,7 +114,7 @@
     </nav>
     <div class="jumbotron jumbotron-fluid" id="jumbotron">
       <div class="container">
-        <h1 class="display-3 fw-bolder text-danger">Stop Deepfake</h1>
+        <h1 class="display-3 fw-bolder text-danger">Stop Deepfakes</h1>
         <p class="fs-3 fw-bold text-white">
           Don't let another person steal your identity
         </p>
@@ -102,9 +123,9 @@
 
     <!-- JavaScript Bundle with Popper -->
     <div class="card">
-      <div class="card-header text-danger fw-bold">Do you know?</div>
+      <div class="card-header text-danger fw-bold">Did you know?</div>
       <div class="card-body">
-        <blockquote class="blockquote mb-0">
+        <blockquote class="blockquote mb-lg-0">
           <p>
             Experts expect social media to flood with about 500,000 videos and
             voice deepfakes in 2023. In 2021, there were 14,678 deepfake videos.
@@ -115,6 +136,43 @@
         </blockquote>
       </div>
     </div>
+    <div class="masquerading">
+      <div class="container-fluid">
+        <h3 class="fw-bolder text-white ">What are Deepfakes?</h3>
+      </div>
+      <div class="card" style="width:auto;">
+        <div class="card-body">
+          <h5 class="card-title">Deepfakes</h5>
+          <p class="card-text">A deepfake is an image, or a video or audio recording, that has been edited using an algorithm to replace the person in the original with someone else (especially a public figure) in a way that makes it look authentic.</p>
+          <br>
+        </div>
+        <div class="card; row justify-content-around" style="width:auto;">
+          <div class="card-body">
+            <h5 class="card-title">Recent trends</h5>
+            <p class="card-text">Deepfake technology is often utilized for entertainment purposes, such as creating humorous content for platforms like TikTok, where users may engage in lighthearted and amusing video posts. However, with the introduction of this fairly new AI technology,  people with nefarious intentions came along to take advantage of it. </p>
+            <br>
+          </div>
+        </div>
+        <div class="card; row justify-content-around" style="width:auto;">
+          <div class="card-body">
+            <h5 class="card-title">Threats and Dangers</h5>
+            <p class="card-text">Deepfake technology, which realistically superimposes faces onto bodies, poses concerns by enabling the creation of explicit and potentially sexual content without consent, leading to reputational harm. Especially since they are easy to use and find, we need to urgently safeguard ourselves</p>
+            <br>
+          </div>
+      </div>
+    </div>
+
+    <h2 class="text-center position ">Below are cards </h2>
+
+  
+    
+    
+
+    
+    
+    
+
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
