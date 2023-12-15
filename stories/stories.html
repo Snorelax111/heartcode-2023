@@ -17,13 +17,23 @@
         background-image: url("../background_deepfake.png");
         display: cover;
       }
+
+      #carouselExampleIndicators {
+            width: 90%;
+            margin: auto;
+        }
+
+        .container {
+            font-weight: bolder;
+            font-size: 1.5em;
+        }
     </style>
   </head>
 
   <body>
     <!-- INSERT CODE HERE -->
     
-    <nav class="navbar navbar-expand-lg bg-light mb-2">
+    <nav class="navbar navbar-expand-lg bg-light mb-0">
       <div class="container-fluid">
         <img src="./images/logo.png" style="position: relative; width: 100px" />
         <button
@@ -78,23 +88,40 @@
         </div>
       </div>
     </nav>
-    <h2 class="text-center text-white " id="support_organisations">
-      Stories of deepfake incidents
-    </h2>
-    <div class="container" id="cards">
-      <div class="row">
-        <div class="col-md-4" id="burgers">
-          <div class="card d-flex flex-column h-100 bg-white bg-gradient">
-            <img src="./helen_image.jpg" class="card-img-top" alt="..." />
-            <div class="card-body text-center">
-              <h5 class="card-title"> My experience of being deepfaked for pornography</h5>
-              <p class="card-text">Helen’s world is turned upside down when she discovers that her face has been digitally edited on to images of women in sexually explicit and often violent situations. Helen shares the impact this deepfake pornography has had on her life and challenges a culture that treats women’s appearance and image as public property while the perpetrators remain anonymous.
-                
-              </p>
-              <a
-                href="https://www.youtube.com/watch?v=pxP7lm29YuE"
-                class="btn btn-info"
-                >Find out more</a
+
+    <div id="carouselExampleIndicators" class="carousel slide bg-dark mt-0"  data-interval="false" data-bs-ride="carousel" style="height: 50%">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-block w-100 h-100 d-flex flex-column align-items-center justify-content-center text-center">
+                <iframe class="" src="https://www.youtube.com/embed/pxP7lm29YuE"> </iframe>
+                <p class="text-white mt-2">Helen’s world is turned upside down when she discovers that her face has been digitally edited on to images of women in sexually explicit and often violent situations.</p>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="d-block w-100 h-100 d-flex flex-column align-items-center justify-content-center text-center">
+                <iframe class=" " src="https://www.youtube.com/embed/pxP7lm29YuE"> </iframe>
+                <p class="text-white mt-2">asd’s world is turned upside down when she discovers that her face has been digitally edited on to images of women in sexually explicit and often violent situations.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-block w-100 h-100 d-flex flex-column align-items-center justify-content-center text-center">
+                <iframe class=" " src="https://www.youtube.com/embed/pxP7lm29YuE"> </iframe>
+                <p class="text-white mt-2">d is turned upside down when she discovers that her face has been digitally edited on to images of women in sexually explicit and often violent situations.</p>
+              </div>
+            </div>
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    
+              
 
     <!-- JavaScript Bundle with Popper -->
     <script
